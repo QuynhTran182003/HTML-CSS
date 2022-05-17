@@ -67,7 +67,7 @@
 
         .tablet-display {
             display: block;
-            position: fixed;
+            position: absolute;
             background-color: black;
             width: 100%;
             z-index: 1;
@@ -130,30 +130,74 @@
         }
     }
 
-   @media (max-width: 499.99px) {
+   @media (max-width: 499.9px) {
        .lap-display, .tablet-display{
            display: none;
        }
        .mobile-display{
-            display: block;
-            position: fixed;
+            position: absolute;
             background-color: black;
             width: 100%;
             z-index: 1;
-       }
-       .mobile-display nav{
-           display: flex;
-           align-items: center;
-           justify-content: center;
-       }
-       
-       .cart-icon{
+        }
+        .logo-brand{
+            margin: 0%;
+            display: block;
+            width: 100%;
+        }
+        .mobile-display nav{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .dropdown {
+            list-style-type: none;
+        }
+        .triple-line{
+            position: relative;
+            left: 0;
+            background-color: black;
+        }
+
+        .line{
+            display: block;
+            height: 2px;
+            width: 2rem;
+            background-color: white;
+            margin: 0.3rem 0.8rem;
+        }
+        .cart-icon{
            display: block;
            width: 15%;
            color: black;
        }
 
-       
+       .dropdown-content{
+        display: none;
+        background-color: rgb(0, 0, 0);
+        box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.7);
+        min-width: 120px;
+        }
+
+        .dropdown:hover .dropdown-content{
+            display: block;
+            position: absolute;
+        }
+
+        .dropdown-content a{
+            color: white;
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+            text-align: left;
+        }
+
+        .dropdown-content a:hover{
+            background-color: #272727;
+        }
+
+        
    }
 
 
@@ -161,7 +205,7 @@
     .containerIndex {
         display: block;
         margin: 0 auto;
-        max-width: 1000px;
+        max-width: 1100px;
     }
     @media (min-width:1284px) {
         .container-index-div{
@@ -173,40 +217,34 @@
         .container-index-div{
             padding-top: 10%;
         }    
-        .description{
-            overflow-y: scroll;
-        }
-        
     }
 
-    @media (max-width: 499.99px) {
+    @media (max-width: 499.9px) {
         .container-index-div{
-            padding-top: 25%;
+            padding-top: 20%;
         }    
+        .intro{
+            flex-wrap: wrap;
+        }
         .description{
-            overflow-y: scroll;
+            margin: 1.5rem 0;
         }
     }
+
     
-    .containerIndex .container-index-div img {
-        max-width: 100%;
+    
+    .container-index-div img {
+        width: 50%;
+        margin: 1rem;
+    }
+
+    .container-index-div{
+        display: block;
+        justify-content: space-around;
     }
 
     #first-pic {
-        box-shadow: 0 -10px 30px 10px rgba(0, 0, 0);
-    }
-
-    figure {
-        position: relative;
-
-    }
-
-    figcaption{
-        position: absolute;
-        bottom: 0;
-        padding: 1rem;
-        background-color: rgba(0, 0, 0, 0.8);
-        width: 100%;
+        box-shadow: 0 10px 30px 10px rgba(0, 0, 0);
     }
 
     #second-pic {
@@ -216,11 +254,8 @@
     .intro{
         display: flex;
         padding-top: 10%;
-        /* margin: 0 auto; */
         align-items: flex-start;
         justify-content: space-around;
-        font-weight: 500;
-        /* flex-wrap: wrap; */
     }
 
     .description{
@@ -229,20 +264,23 @@
         box-shadow: 0 10px 15px 0.25px rgba(0, 0, 0);
         font-size: 130% ;
         max-width: 50%;
-        height: 250px;
+        max-height: 250px;
         line-height: 1.35;
-        /* flex: 300px; */
-    }
+        font-size: medium;
+        margin: 1rem;
+        overflow-y: scroll;
 
+    }
+/* 
     .description1{
         padding-left: 1rem;
-        margin-right: 2.5rem;
+        margin: 2rem;
     }
 
     .description2{
         padding-left: 1rem;
         margin-left: 2.5rem;
-    }
+    } */
 
 /* MENU PAGE */
 
@@ -401,7 +439,6 @@
     text-align: center;
     box-shadow: 0px 10px 15px 3px lightgrey;
     flex: 200px;
-    
 }
 
 .more-info{
@@ -411,6 +448,7 @@
     background-color: black;
     display: flex;
     justify-content: space-around;
+    align-items: center;
     color: white;
     padding: 2rem;
     flex-wrap: wrap;
@@ -458,7 +496,6 @@
     margin: 0.2rem;
 }
 footer {
-    position: static;
     bottom: 0;
     width: 100%;
     padding: 0.2rem 0;
