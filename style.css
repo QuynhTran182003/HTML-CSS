@@ -98,6 +98,7 @@
         }
         .triple-line{
             background-color: black;
+            outline: none;
         }
         .line{
             display: block;
