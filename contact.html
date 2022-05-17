@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Claus Café - Contact</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="bodyContact">
+    <header>
+        <div class="lap-display">
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="menu.html">Menu</a></li>
+                </ul>
+            </nav>
+            <a href="index.html">
+                <img src="faviconio-logo\logo.svg" alt="logo-brand" class="logo-brand">
+            </a>
+            <nav>
+                <ul>
+                    <li><a href="gallery.html">Gallery</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <a href="#"><img class="cart-icon" src="icons-1.8.1\icons-1.8.1\icons\cart.svg" alt="" style="padding-right: 0 2rem;"></a> 
+                </ul>
+            </nav>
+        </div>
+        <div class="tablet-display">
+            <nav>
+                <ul>
+                    <li class="dropdown"> 
+                        <button class="triple-line">
+                            <div class="line"></div>
+                            <div class="line"></div>
+                            <div class="line"></div> 
+                        </button>
+                        <div class="dropdown-content">
+                            <a href="index.html">Home</a>
+                            <a href="menu.html">Menu</a>
+                            <a href="gallery.html">Gallery</a>
+                            <a href="contact.html">Contact</a>
+                        </div>
+                    </li>
+                </ul>
+                <a href="index.html">
+                    <img src="faviconio-logo\logo.svg" alt="logo-brand" class="logo-brand">
+                </a>
+                <a href="#"><img class="cart-icon" src="icons-1.8.1\icons-1.8.1\icons\cart.svg" alt="" style="padding-right: 0 2rem;"></a> 
+            </nav>
+        </div>
+       
+        <div class="mobile-display">
+            <nav>
+                <a href="index.html">
+                    <img src="faviconio-logo\logo.svg" alt="logo-brand" class="logo-brand">
+                </a>
+                <div class="symbols">
+                    <ul>
+                        <li class="dropdown"> 
+                            <button class="triple-line">
+                                <div class="line"></div>
+                                <div class="line"></div>
+                                <div class="line"></div> 
+                            </button>
+                            <div class="dropdown-content">
+                                <a href="index.html">Home</a>
+                                <a href="menu.html">Menu</a>
+                                <a href="gallery.html">Gallery</a>
+                                <a href="contact.html">
+                                    Contact</a>
+                                <a href="#" style="display: block;">
+                                    My cart 
+                                </a> 
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <main class="containerContact">
+        <div class="container-contact-div">
+            <div class="info-4-contact">
+                <section>
+                    <h2>Where to find us?</h2>
+                    <br>
+                    <p>Mezi Vodami 2349/45 <br>
+                        Modrany Praha 4 14300
+                    </p>
+                </section>
+                <section> 
+                    <h2>Opening hours</h2>
+                    <br>
+                    <p>Mon - Fri<br>
+                        9:00 - 22:00 <br><br>
+                        Sat - Sun <br>
+                        10:00 - 23:30
+                    </p>
+                </section>
+            </div>
+            <div class="more-info">
+                <div class="map">
+                    <div class="mapouter">
+                        <div class="gmap_canvas">
+                            <iframe width="100%" height="300%" id="gmap_canvas" src="https://maps.google.com/maps?q=Mezi%20Vodami%202349/45&t=&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe>
+                            <br>
+                            <style>
+                            .mapouter{
+                                position: relative;
+                                text-align: center;
+                                max-height:100%;
+                                max-width:300%;
+                                }
+                            </style>
+                            <style>
+                            .gmap_canvas {
+                                overflow: hidden;
+                                background: none!important;
+                                max-height: 100%;
+                                max-width: 300%;
+                                
+                                }
+                            </style>
+                        </div>
+                    </div>
+                </div>
+                <div class="reservation-form">
+                    <h1>Make a reservation</h1><br><br>
+                    <form action="index.html" >
+                        <input type="text" name="name" id="name" placeholder=" Your name" required ><br><br>
+                        <input type="text" name="surname" id="surname" placeholder=" Your surname" required><br><br>
+                        <input type="tel" name="tel" id="tel" placeholder=" Telephone" required><br><br>
+                        <input type="email" name="email" id="email" placeholder=" Email" required><br><br>
+                        <input type="date" name="date" id="date" placeholder=" Reservation on date" required><br><br>
+                        <select value="Number of people" required><br><br>
+                            <option value="Number of people">Number of people</option>
+                            <option value="">1</option>
+                            <option value="">2</option>
+                            <option value="">3</option>
+                            <option value="">4</option>
+                            <option value="">5</option>
+                            <option value="">6</option>
+                            <option value="">7</option>
+                            <option value="">8</option>
+                            <option value="">9</option>
+                            <option value="">10</option>
+                            <option value="">>10</option>
+                        </select>
+                        <br><br>
+                        <textarea name="additional" id="additional" style="resize: none; height: 4rem;" placeholder=" Optional"></textarea>
+                        <br><br>
+                        <input type="button" name="reserve" id="reserve" value="Reserve">
+                    </form>
+                    
+                </div>
+            </div>
+        </div>
+    </main>
+</body>
+
+<footer>
+    <a href=""><img class="contactIcon" src="icons-1.8.1\icons-1.8.1\icons\facebook.svg" alt="fb"></a>
+    <a href=""><img class="contactIcon" src="icons-1.8.1\icons-1.8.1\icons\instagram.svg" alt="ins"></a>
+    <a href=""><img class="contactIcon" src="icons-1.8.1\icons-1.8.1\icons\github.svg" alt="git"></a>
+    <a href=""><img class="contactIcon" src="icons-1.8.1\icons-1.8.1\icons\mailbox.svg" alt="mail"></a>
+    <p>Designed by Quynh Tran - 2022</p>
+</footer>
+</html>

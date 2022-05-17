@@ -1,0 +1,471 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    /* font-family: brandon-grotesque,sans-serif; */
+}
+/* HOME PAGE */
+.bodyIndex {
+    color: white;
+    background-image: url('img/cafe3.avif');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+    /* HEADER */
+    @media (min-width: 1284px){
+        .tablet-display, .mobile-display{
+            display: none;
+        }
+        .lap-display{
+            position: fixed;
+            background-color: black;
+            width: 100%;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            z-index: 1;
+        }
+
+        .cart-icon{
+            margin-left: 1.5rem;
+        }
+
+        header a img{
+            display: block;
+            width: 100%;
+        }
+    
+        header nav {
+            margin: 0 5rem;
+        }
+        header nav ul {
+            display: flex;
+            align-items: center;
+        }
+        header nav ul li {
+            display: inline-block;
+            margin: 0 3rem;
+        }
+    
+        header nav ul li a{
+            text-decoration: none;
+            font-size: 1.3rem;
+            color: white;
+        }
+    
+        header nav ul li:hover{
+            transform: scale(1.1);
+            transition: transform 300ms ease-out;
+            
+        }
+    }
+    /* for screen 500-1283.99px */
+    @media only screen and (max-width: 1283.99px) and (min-width: 500px) {
+        .lap-display, .mobile-display{
+            display: none;
+        }
+
+        .tablet-display {
+            display: block;
+            position: fixed;
+            background-color: black;
+            width: 100%;
+            z-index: 1;
+        }
+        .tablet-display nav{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .dropdown{
+            margin: 0 4rem;
+        }
+        .cart-icon{
+            width: 20%;
+            margin: 0 4rem;
+            
+        }
+        .logo-brand{
+            position: relative;
+            display: flex;
+            margin: 0 auto;
+            width: 100%;
+        }
+        .dropdown {
+            list-style-type: none;
+        }
+        .triple-line{
+            background-color: black;
+        }
+        .line{
+            display: block;
+            height: 3px;
+            width: 32px;
+            background-color: white;
+            margin: 0.5rem;
+        }
+
+        .dropdown-content{
+            display: none;
+            background-color: rgb(0, 0, 0);
+            box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.7);
+            min-width: 160px;
+        }
+        
+        .dropdown:hover .dropdown-content{
+            display: block;
+            position: absolute;
+        }
+
+        .dropdown-content a{
+            color: white;
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+            text-align: left;
+        }
+
+        .dropdown-content a:hover{
+            background-color: #272727;
+        }
+    }
+
+   @media (max-width: 499.99px) {
+       .lap-display, .tablet-display{
+           display: none;
+       }
+       .mobile-display{
+            display: block;
+            position: fixed;
+            background-color: black;
+            width: 100%;
+            z-index: 1;
+       }
+       .mobile-display nav{
+           display: flex;
+           align-items: center;
+           justify-content: center;
+       }
+       
+       .cart-icon{
+           display: block;
+           width: 15%;
+           color: black;
+       }
+
+       
+   }
+
+
+    /* MAIN */
+    .containerIndex {
+        display: block;
+        margin: 0 auto;
+        max-width: 1000px;
+    }
+    @media (min-width:1284px) {
+        .container-index-div{
+            padding-top: 5% ;
+        }
+        
+    }
+    @media only screen and (max-width: 1283.99px) and (min-width: 500px) {
+        .container-index-div{
+            padding-top: 10%;
+        }    
+        .description{
+            overflow-y: scroll;
+        }
+        
+    }
+
+    @media (max-width: 499.99px) {
+        .container-index-div{
+            padding-top: 25%;
+        }    
+        .description{
+            overflow-y: scroll;
+        }
+    }
+    
+    .containerIndex .container-index-div img {
+        max-width: 100%;
+    }
+
+    #first-pic {
+        box-shadow: 0 -10px 30px 10px rgba(0, 0, 0);
+    }
+
+    figure {
+        position: relative;
+
+    }
+
+    figcaption{
+        position: absolute;
+        bottom: 0;
+        padding: 1rem;
+        background-color: rgba(0, 0, 0, 0.8);
+        width: 100%;
+    }
+
+    #second-pic {
+        box-shadow: 0 10px 30px 10px rgba(0, 0, 0);
+    }
+
+    .intro{
+        display: flex;
+        padding-top: 10%;
+        /* margin: 0 auto; */
+        align-items: flex-start;
+        justify-content: space-around;
+        font-weight: 500;
+        /* flex-wrap: wrap; */
+    }
+
+    .description{
+        background-color: rgba(53, 53, 53, 0.645);
+        padding: 1rem;
+        box-shadow: 0 10px 15px 0.25px rgba(0, 0, 0);
+        font-size: 130% ;
+        max-width: 50%;
+        height: 250px;
+        line-height: 1.35;
+        /* flex: 300px; */
+    }
+
+    .description1{
+        padding-left: 1rem;
+        margin-right: 2.5rem;
+    }
+
+    .description2{
+        padding-left: 1rem;
+        margin-left: 2.5rem;
+    }
+
+/* MENU PAGE */
+
+.bodyMenu{
+    color: white;
+    background-image: url('img/background2.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.containerMenu{
+    display: block;
+    margin: 0 auto;
+    max-width: 1200px;
+}
+
+@media (min-width:1284px) {
+    .container-menu-div{
+        padding-top: 15%;
+    }
+}
+
+@media only screen and (max-width: 1283.99px) and (min-width: 500px) {
+    .container-menu-div{
+        padding-top: 20% ;
+    }    
+}
+
+@media (max-width: 499.99px) {
+    .container-menu-div{
+        padding-top: 25% ;
+    }    
+}
+
+.container-menu-div .items{
+    display: block;
+    text-align: center;
+}
+
+.items h1{
+    padding-bottom: 1rem;
+}
+.items{
+    margin-bottom: 3rem;
+}
+
+.group-of-items{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+.product{
+    display: block;
+    margin: 1.5rem;
+    flex: 250px;
+}
+.product img{
+    box-shadow: 0px 5px 10px 3px rgb(84, 84, 84);
+}
+.name-of-product{
+    margin-bottom: 1rem;
+}
+.infoProduct{
+    display: flex;
+    justify-content: space-between;
+    padding: 0.5rem 0;
+    align-items: center;
+}
+.infoProduct button{
+    padding: 0.4rem;
+    background-color: white;
+    color: black;
+}
+.infoProduct button:hover{
+    background-color: white;
+    /* border-color: darkgrey; */
+    color: black;
+    /* border-width: 0.1rem; */
+    cursor: pointer;
+}
+.container-menu-div img{
+    width: 100%;
+}
+
+/* GALLERY PAGE */
+.bodyGallery{
+    background-image: url('img/background2.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.container-gallery-div{
+    margin: 0 2rem;
+}
+@media (min-width:1284px) {
+    .container-gallery-div{
+        padding-top: 10%;
+    }
+}
+@media only screen and (max-width: 1283.99px) and (min-width: 500px) {
+    .container-gallery-div{
+        padding-top: 15%;
+    }    
+}
+
+@media (max-width: 499.99px) {
+    .container-gallery-div{
+        padding-top: 25%;
+    }    
+}
+
+.group-picture{
+    display: flex;
+    justify-content: space-between;
+}
+
+.containerGallery .container-gallery-div .group-picture img{
+    padding: 1rem;
+    width: 100%;
+}
+
+/* CONTACT PAGE */
+.bodyContact{
+    background-image: url('img/background2.jpg');
+    color: white;
+}
+
+@media (min-width:1284px) {
+    .container-contact-div{
+        padding-top: 10%;
+    }
+}
+@media only screen and (max-width: 1283.99px) and (min-width: 500px) {
+    .container-contact-div{
+        padding-top: 15%;
+    }    
+}
+
+@media (max-width: 499.99px) {
+    .container-contact-div{
+        padding-top: 30%;
+    }    
+}
+
+.containerContact{
+    margin: 0 auto;
+    max-width: 1500px;
+}
+.info-4-contact{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+.containerContact section{
+    margin: 2rem 5rem;
+    padding: 3rem;
+    width: 100%;
+    text-align: center;
+    box-shadow: 0px 10px 15px 3px lightgrey;
+    flex: 200px;
+    
+}
+
+.more-info{
+    width: 100%;
+    height: auto;
+    margin-top: 4rem;
+    background-color: black;
+    display: flex;
+    justify-content: space-around;
+    color: white;
+    padding: 2rem;
+    flex-wrap: wrap;
+}
+.map, .reservation-form{
+    flex: 300px;
+}
+.reservation-form{
+    width: 50%;
+    text-align: center;
+    border: 1px;
+    border-radius: 0.2rem;
+    padding: 0 1rem;
+}
+.reservation-form input, select, textarea{
+    width: 100%;
+    padding: 0.5rem;
+    outline: none;
+    font-size: large;
+    border-radius: 0.5rem 0.5rem;
+    border-color: black;
+}
+#reserve{
+    width: 40%;
+    padding: 1rem;
+}
+
+#reserve:hover{
+    cursor: pointer;
+    transform: scale(1.1);
+    transition: transform 400ms ease-out;
+}
+
+/* FOOTER */
+.containerFooter{
+    display: block;
+    align-items: center;
+    padding: 0.5rem;
+    
+}
+.contactIcon{
+    /* background-color: white; */
+    color: white;
+    width: 1.8rem;
+    margin: 0.2rem;
+}
+footer {
+    position: static;
+    bottom: 0;
+    width: 100%;
+    padding: 0.2rem 0;
+    margin-top: 1rem;
+    background-color: black;
+    opacity: 0.9;
+    color: aliceblue;
+    text-align: center;
+    font-size: medium;
+}
