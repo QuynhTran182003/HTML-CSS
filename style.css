@@ -77,14 +77,16 @@
             justify-content: space-between;
             align-items: center;
         }
+
         .dropdown{
             margin: 0 4rem;
         }
+
         .cart-icon{
             width: 20%;
             margin: 0 4rem;
-            
         }
+
         .logo-brand{
             position: relative;
             display: flex;
@@ -271,16 +273,6 @@
         overflow-y: scroll;
 
     }
-/* 
-    .description1{
-        padding-left: 1rem;
-        margin: 2rem;
-    }
-
-    .description2{
-        padding-left: 1rem;
-        margin-left: 2.5rem;
-    } */
 
 /* MENU PAGE */
 
@@ -304,13 +296,13 @@
 
 @media only screen and (max-width: 1283.99px) and (min-width: 500px) {
     .container-menu-div{
-        padding-top: 20% ;
+        padding-top: 20%;
     }    
 }
 
 @media (max-width: 499.99px) {
     .container-menu-div{
-        padding-top: 25% ;
+        padding-top: 35%;
     }    
 }
 
