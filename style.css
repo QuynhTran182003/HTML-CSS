@@ -159,7 +159,6 @@
         }
         .triple-line{
             position: relative;
-            left: 0;
             background-color: black;
         }
 
@@ -199,12 +198,9 @@
         .dropdown-content a:hover{
             background-color: #272727;
         }
-
-        
    }
 
-
-    /* MAIN */
+   /* MAIN */
     .containerIndex {
         display: block;
         margin: 0 auto;
@@ -216,6 +212,7 @@
         }
         
     }
+
     @media only screen and (max-width: 1283.99px) and (min-width: 500px) {
         .container-index-div{
             padding-top: 10%;
@@ -237,8 +234,8 @@
     
     
     .container-index-div img {
-        width: 50%;
-        margin: 1rem;
+        width: 60%;
+        margin: 1rem ;
     }
 
     .container-index-div{
@@ -266,7 +263,7 @@
         padding: 1rem;
         box-shadow: 0 10px 15px 0.25px rgba(0, 0, 0);
         font-size: 130% ;
-        max-width: 50%;
+        max-width: 60%;
         max-height: 250px;
         line-height: 1.35;
         font-size: medium;
@@ -338,19 +335,21 @@
 .infoProduct{
     display: flex;
     justify-content: space-between;
-    padding: 0.5rem 0;
+    padding: 1rem 0;
     align-items: center;
+    font-weight: 600;
 }
 .infoProduct button{
     padding: 0.4rem;
-    background-color: white;
-    color: black;
+    border: none;
+
+    background-color: black;
+    color: white;
 }
 .infoProduct button:hover{
     background-color: white;
-    /* border-color: darkgrey; */
+    outline-style: none;
     color: black;
-    /* border-width: 0.1rem; */
     cursor: pointer;
 }
 .container-menu-div img{
@@ -381,6 +380,10 @@
     .container-gallery-div{
         padding-top: 25%;
     }    
+    .group-picture{
+        display: flex;
+        flex-direction: column;
+    }
 }
 
 .group-picture{
