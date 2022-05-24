@@ -91,7 +91,7 @@
             position: relative;
             display: flex;
             margin: 0 auto;
-            max-width: 100%;
+            width: 100%;
         }
 
         .dropdown {
@@ -115,6 +115,11 @@
             box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.7);
             min-width: 160px;
         }
+        .itemDropdown{
+            display: flex;
+            align-items: center;
+            
+        }
         
         .dropdown:hover .dropdown-content{
             display: block;
@@ -125,7 +130,7 @@
             color: white;
             padding: 12px 16px;
             text-decoration: none;
-            display: block;
+            /* display: block; */
             text-align: left;
         }
 
@@ -146,7 +151,7 @@
         }
         .logo-brand{
             margin: 0%;
-            display: block;
+            display: inline;
             width: 100%;
         }
         .mobile-display nav{
@@ -181,6 +186,7 @@
         background-color: rgb(0, 0, 0);
         box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.7);
         min-width: 120px;
+
         }
 
         .dropdown:hover .dropdown-content{
@@ -217,7 +223,8 @@
     @media only screen and (max-width: 1283.99px) and (min-width: 500px) {
         .container-index-div{
             padding-top: 10%;
-        }    
+        }   
+        
     }
 
     @media (max-width: 499.9px) {
@@ -229,7 +236,7 @@
         }
         .description{
             margin: 1.5rem 0;
-            overflow-y: scroll;
+            
         }
     }
 
@@ -268,10 +275,10 @@
         max-width: 60%;
         max-height: 250px;
         line-height: 1.35;
-        font-size: medium;
+        font-size: large;
         margin: 1rem;
-        
-
+        overflow-y: scroll;
+        min-width: 7rem;
     }
 
 /* MENU PAGE */
