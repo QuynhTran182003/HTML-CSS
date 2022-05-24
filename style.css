@@ -100,6 +100,7 @@
         .triple-line{
             background-color: black;
             outline: none;
+            border:none;
         }
         .line{
             display: block;
