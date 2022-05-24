@@ -392,13 +392,13 @@
 }
 @media only screen and (max-width: 1283.99px) and (min-width: 500px) {
     .container-gallery-div{
-        padding-top: 15%;
+        padding-top: 18%;
     }    
 }
 
 @media (max-width: 499.99px) {
     .container-gallery-div{
-        padding-top: 25%;
+        padding-top: 28%;
     }    
     .group-picture{
         display: flex;
