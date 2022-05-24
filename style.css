@@ -97,10 +97,11 @@
         .dropdown {
             list-style-type: none;
         }
+
         .triple-line{
             background-color: black;
-            outline: none;
-            border:none;
+            /* outline: none; */
+            border-style: none;
         }
         .line{
             display: block;
