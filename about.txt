@@ -1,0 +1,6 @@
+This favicon was generated using the following font:
+
+- Font Title: Unkempt
+- Font Author: Copyright (c) 2011 by Font Diner, Inc DBA Sideshow (diner@fontdiner.com) with Reseved Font Name "Unkempt Bold"
+- Font Source: http://fonts.gstatic.com/s/unkempt/v19/2EbnL-Z2DFZue0DSSYYf8z2Yt_c.ttf
+- Font License: Apache License, version 2.0 (http://www.apache.org/licenses/LICENSE-2.0.html))
